@@ -17,26 +17,45 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Villa Green Theme */
+    --primary: 120 67% 30%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 120 45% 45%;
+    --primary-dark: 120 80% 20%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 45 85% 95%;
+    --secondary-foreground: 120 67% 30%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 120 15% 96%;
+    --muted-foreground: 120 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 35 85% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 120 15% 90%;
+    --input: 120 15% 96%;
+    --ring: 120 67% 30%;
 
-    --radius: 0.5rem;
+    /* Custom Villa Colors */
+    --villa-green: 120 67% 30%;
+    --villa-green-light: 120 45% 45%;
+    --villa-green-dark: 120 80% 20%;
+    --villa-cream: 45 85% 95%;
+    --villa-gold: 35 85% 50%;
+    --villa-sage: 120 25% 85%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--villa-green)), hsl(var(--villa-green-light)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--villa-sage)));
+
+    /* Shadows */
+    --shadow-luxury: 0 25px 50px -12px hsl(var(--villa-green) / 0.15);
+    --shadow-card: 0 10px 30px -5px hsl(var(--villa-green) / 0.1);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +120,11 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .luxury-card {
+    @apply bg-gradient-to-br from-background to-villa-sage/10 border border-villa-sage/20 shadow-card backdrop-blur-sm;
   }
 }
