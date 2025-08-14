@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Star, MapPin, Users, Bed } from "lucide-react";
-import villaHero from "/lovable-uploads/e85c3cfc-b2c6-431e-929c-512d468d0c17.png";
+const villaHero = "/lovable-uploads/e85c3cfc-b2c6-431e-929c-512d468d0c17.png";
 
 const Hero = () => {
   return (

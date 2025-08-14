@@ -2,11 +2,11 @@ import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
-import villaInterior from "/lovable-uploads/bd028ba7-6a4f-49b8-a48b-12becb8e6eaa.png";
-import villaOutdoor from "/lovable-uploads/e85c3cfc-b2c6-431e-929c-512d468d0c17.png";
-import villaGarden from "/lovable-uploads/e91daf4e-6079-4e8a-a909-74fcf55fad8b.png";
-import villaHallway from "/lovable-uploads/026f2409-683b-4561-afb8-678f5c8ba0b5.png";
-import villaDetails from "/lovable-uploads/ef6c4b24-2523-46a4-8383-93f2a98adbab.png";
+const villaInterior = "/lovable-uploads/bd028ba7-6a4f-49b8-a48b-12becb8e6eaa.png";
+const villaOutdoor = "/lovable-uploads/e85c3cfc-b2c6-431e-929c-512d468d0c17.png";
+const villaGarden = "/lovable-uploads/e91daf4e-6079-4e8a-a909-74fcf55fad8b.png";
+const villaHallway = "/lovable-uploads/026f2409-683b-4561-afb8-678f5c8ba0b5.png";
+const villaDetails = "/lovable-uploads/ef6c4b24-2523-46a4-8383-93f2a98adbab.png";
 
 const galleryImages = [
   { src: villaOutdoor, alt: "Villa Outdoor Terrace", title: "Sunset Terrace with Mountain Views" },
