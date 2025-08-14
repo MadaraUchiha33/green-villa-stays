@@ -2,31 +2,31 @@ import { Card, CardContent } from "@/components/ui/card";
 import { 
   Wifi, 
   Car, 
-  Waves, 
   UtensilsCrossed, 
-  Dumbbell, 
   Wind,
   Tv,
-  Gamepad2,
   Bath,
   TreePine,
   Shield,
-  Coffee
+  MapPin,
+  Phone,
+  Mail,
+  Clock
 } from "lucide-react";
 
 const amenities = [
-  { icon: Waves, title: "Private Pool", description: "Infinity pool with ocean views" },
   { icon: Wifi, title: "High-Speed WiFi", description: "Complimentary internet access" },
   { icon: Car, title: "Free Parking", description: "Secure private parking" },
-  { icon: UtensilsCrossed, title: "Full Kitchen", description: "Modern appliances & cookware" },
-  { icon: Dumbbell, title: "Fitness Area", description: "Private gym equipment" },
+  { icon: UtensilsCrossed, title: "Full Kitchen", description: "Traditional cooking facilities" },
   { icon: Wind, title: "Air Conditioning", description: "Climate control in all rooms" },
-  { icon: Tv, title: "Smart TVs", description: "Netflix & streaming services" },
-  { icon: Gamepad2, title: "Game Room", description: "Entertainment for all ages" },
-  { icon: Bath, title: "Luxury Bathrooms", description: "Spa-quality amenities" },
-  { icon: TreePine, title: "Garden Views", description: "Landscaped outdoor spaces" },
-  { icon: Shield, title: "24/7 Security", description: "Safe & secure environment" },
-  { icon: Coffee, title: "Coffee Station", description: "Premium coffee & tea" },
+  { icon: Tv, title: "Smart TVs", description: "Entertainment in living areas" },
+  { icon: Bath, title: "Private Bathrooms", description: "Clean and comfortable facilities" },
+  { icon: TreePine, title: "Garden Views", description: "Beautiful natural surroundings" },
+  { icon: Shield, title: "Safe Environment", description: "Peaceful and secure location" },
+  { icon: MapPin, title: "Great Location", description: "Easy access to local attractions" },
+  { icon: Phone, title: "Guest Support", description: "Available when you need us" },
+  { icon: Mail, title: "Communication", description: "Easy contact methods" },
+  { icon: Clock, title: "Flexible Check-in", description: "Convenient arrival times" },
 ];
 
 const Amenities = () => {

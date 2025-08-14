@@ -2,18 +2,19 @@ import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
-import villaInterior from "@/assets/villa-interior.jpg";
-import villaPool from "@/assets/villa-pool.jpg";
-import villaBedroom from "@/assets/villa-bedroom.jpg";
-import villaHero from "@/assets/villa-hero.jpg";
+import villaInterior from "/lovable-uploads/bd028ba7-6a4f-49b8-a48b-12becb8e6eaa.png";
+import villaOutdoor from "/lovable-uploads/e85c3cfc-b2c6-431e-929c-512d468d0c17.png";
+import villaGarden from "/lovable-uploads/e91daf4e-6079-4e8a-a909-74fcf55fad8b.png";
+import villaHallway from "/lovable-uploads/026f2409-683b-4561-afb8-678f5c8ba0b5.png";
+import villaDetails from "/lovable-uploads/ef6c4b24-2523-46a4-8383-93f2a98adbab.png";
 
 const galleryImages = [
-  { src: villaHero, alt: "Villa Exterior", title: "Beautiful Villa Exterior" },
-  { src: villaInterior, alt: "Living Room", title: "Spacious Living Area" },
-  { src: villaPool, alt: "Pool Area", title: "Private Pool & Garden" },
-  { src: villaBedroom, alt: "Master Bedroom", title: "Luxury Master Bedroom" },
-  { src: villaInterior, alt: "Kitchen", title: "Modern Kitchen" },
-  { src: villaPool, alt: "Outdoor Dining", title: "Outdoor Dining Space" },
+  { src: villaOutdoor, alt: "Villa Outdoor Terrace", title: "Sunset Terrace with Mountain Views" },
+  { src: villaInterior, alt: "Dining Room", title: "Traditional Dining Area" },
+  { src: villaGarden, alt: "Garden View", title: "Peaceful Garden & Landscape" },
+  { src: villaHallway, alt: "Villa Entrance", title: "Elegant Entrance Hall" },
+  { src: villaDetails, alt: "Interior Details", title: "Traditional Architectural Details" },
+  { src: villaInterior, alt: "Living Space", title: "Comfortable Living Areas" },
 ];
 
 const Gallery = () => {
@@ -36,11 +37,11 @@ const Gallery = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Villa Gallery
+            Villa Arougou Gallery
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Take a visual journey through our stunning villa and discover 
-            the beauty that awaits you.
+            Take a visual journey through our authentic villa and discover 
+            the traditional charm and natural beauty that awaits you.
           </p>
         </div>
         

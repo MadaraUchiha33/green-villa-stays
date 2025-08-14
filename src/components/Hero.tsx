@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Star, MapPin, Users, Bed } from "lucide-react";
-import villaHero from "@/assets/villa-hero.jpg";
+import villaHero from "/lovable-uploads/e85c3cfc-b2c6-431e-929c-512d468d0c17.png";
 
 const Hero = () => {
   return (
@@ -26,19 +26,19 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Luxury Villa
-            <span className="block text-villa-gold">Experience</span>
+            Villa Arougou
+            <span className="block text-villa-gold">Authentic Stay</span>
           </h1>
           
           <p className="text-xl mb-8 text-gray-200 leading-relaxed">
-            Escape to paradise in our stunning villa featuring breathtaking views, 
-            modern amenities, and unforgettable moments waiting to be made.
+            Experience authentic charm in our traditional villa featuring stunning views, 
+            comfortable amenities, and peaceful moments in a beautiful natural setting.
           </p>
           
           <div className="flex flex-wrap items-center gap-6 mb-8 text-gray-300">
             <div className="flex items-center space-x-2">
               <MapPin className="w-5 h-5 text-villa-gold" />
-              <span>Mediterranean Coast</span>
+              <span>Traditional Location</span>
             </div>
             <div className="flex items-center space-x-2">
               <Users className="w-5 h-5 text-villa-gold" />

@@ -192,22 +192,22 @@ const BookingWidget = () => {
                   )}
                   
                   {nights === 0 && (
-                    <div className="text-center text-muted-foreground py-8">
-                      Select your dates to see pricing
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
+                  <div className="text-center text-muted-foreground py-8">
+                    Select your dates to see pricing
+                  </div>
+                )}
+              </CardContent>
+            </Card>
 
-              <div className="mt-6 p-6 bg-villa-cream rounded-lg">
-                <h3 className="font-semibold text-primary mb-3">What's Included</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Free WiFi & parking</li>
-                  <li>• Full kitchen & laundry</li>
-                  <li>• Pool & garden access</li>
-                  <li>• 24/7 concierge service</li>
-                  <li>• Welcome amenities</li>
-                </ul>
+            <div className="mt-6 p-6 bg-villa-cream rounded-lg">
+              <h3 className="font-semibold text-primary mb-3">What's Included</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>• Free WiFi & parking</li>
+                <li>• Full kitchen access</li>
+                <li>• Garden & terrace access</li>
+                <li>• Guest support service</li>
+                <li>• Welcome amenities</li>
+              </ul>
               </div>
             </div>
           </div>

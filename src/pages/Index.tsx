@@ -37,9 +37,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Green Villa</h3>
+              <h3 className="text-2xl font-bold mb-4">Villa Arougou</h3>
               <p className="text-primary-foreground/80">
-                Experience luxury and tranquility in our beautiful Mediterranean villa.
+                Experience authentic charm and tranquility in our beautiful traditional villa.
               </p>
             </div>
             <div>
@@ -55,13 +55,13 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Contact</h4>
               <div className="space-y-2 text-primary-foreground/80">
                 <p>+1 (555) 123-4567</p>
-                <p>hello@greenvilla.com</p>
-                <p>Mediterranean Coast</p>
+                <p>hello@villaarougou.com</p>
+                <p>Villa Arougou Location</p>
               </div>
             </div>
           </div>
           <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/60">
-            <p>&copy; 2024 Green Villa. All rights reserved.</p>
+            <p>&copy; 2024 Villa Arougou. All rights reserved.</p>
           </div>
         </div>
       </footer>

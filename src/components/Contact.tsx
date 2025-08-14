@@ -71,7 +71,7 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold text-primary">Location</h4>
                       <p className="text-muted-foreground">
-                        Mediterranean Coast<br />
+                        Villa Arougou<br />
                         Luxury Villa District<br />
                         Paradise Island, 12345
                       </p>
@@ -94,7 +94,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-primary">Email</h4>
-                      <p className="text-muted-foreground">hello@greenvilla.com</p>
+                      <p className="text-muted-foreground">hello@villaarougou.com</p>
                     </div>
                   </div>
 
@@ -118,9 +118,9 @@ const Contact = () => {
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Check-in: 3:00 PM</li>
                   <li>• Check-out: 11:00 AM</li>
-                  <li>• 24/7 concierge service</li>
-                  <li>• Pet-friendly (with approval)</li>
-                  <li>• Smoking prohibited</li>
+                  <li>• Guest support available</li>
+                  <li>• Quiet environment</li>
+                  <li>• No smoking indoors</li>
                   <li>• Maximum 8 guests</li>
                 </ul>
               </div>
