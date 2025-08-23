@@ -19,11 +19,12 @@ const BookingWidget = () => {
     alert("Booking functionality will be connected to the database once Supabase is integrated!");
   };
 
-  const basePrice = 450;
+  // Moroccan Dirham pricing: 700 DH per person per night
+  const pricePerPersonPerNight = 700;
   const nights = checkIn && checkOut ? Math.ceil((checkOut.getTime() - checkIn.getTime()) / (1000 * 60 * 60 * 24)) : 0;
-  const subtotal = nights * basePrice;
-  const cleaningFee = 75;
-  const serviceFee = subtotal * 0.1;
+  const subtotal = nights * pricePerPersonPerNight * guests;
+  const cleaningFee = 200; // Updated cleaning fee in DH
+  const serviceFee = subtotal * 0.05; // Reduced service fee for DH pricing
   const total = subtotal + cleaningFee + serviceFee;
 
   return (
@@ -165,28 +166,28 @@ const BookingWidget = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex justify-between">
-                    <span>Price per night</span>
-                    <span className="font-semibold">${basePrice}</span>
+                    <span>Price per person per night</span>
+                    <span className="font-semibold">{pricePerPersonPerNight} DH</span>
                   </div>
                   
                   {nights > 0 && (
                     <>
                       <div className="flex justify-between">
-                        <span>${basePrice} x {nights} nights</span>
-                        <span className="font-semibold">${subtotal}</span>
+                        <span>{pricePerPersonPerNight} DH x {guests} guests x {nights} nights</span>
+                        <span className="font-semibold">{subtotal} DH</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Cleaning fee</span>
-                        <span className="font-semibold">${cleaningFee}</span>
+                        <span className="font-semibold">{cleaningFee} DH</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Service fee</span>
-                        <span className="font-semibold">${serviceFee.toFixed(2)}</span>
+                        <span className="font-semibold">{serviceFee.toFixed(2)} DH</span>
                       </div>
                       <hr className="border-border" />
                       <div className="flex justify-between text-lg font-bold">
                         <span>Total</span>
-                        <span className="text-primary">${total.toFixed(2)}</span>
+                        <span className="text-primary">{total.toFixed(2)} DH</span>
                       </div>
                     </>
                   )}

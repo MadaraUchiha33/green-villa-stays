@@ -62,7 +62,7 @@ const Hero = () => {
           <div className="mt-8 p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20">
             <div className="flex items-center justify-between text-sm">
               <span>Starting from</span>
-              <span className="text-2xl font-bold text-villa-gold">$450<span className="text-base text-gray-300">/night</span></span>
+              <span className="text-2xl font-bold text-villa-gold">700 DH<span className="text-base text-gray-300">/person/night</span></span>
             </div>
           </div>
         </div>
