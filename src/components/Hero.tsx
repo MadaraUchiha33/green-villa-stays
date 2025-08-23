@@ -51,11 +51,27 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="hero" size="lg" className="text-lg">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg"
+              onClick={() => {
+                const bookingSection = document.getElementById('booking');
+                bookingSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Book Your Stay
             </Button>
-            <Button variant="ghost-white" size="lg" className="text-lg">
-              Virtual Tour
+            <Button 
+              variant="ghost-white" 
+              size="lg" 
+              className="text-lg"
+              onClick={() => {
+                const gallerySection = document.getElementById('gallery');
+                gallerySection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              View Gallery
             </Button>
           </div>
           
