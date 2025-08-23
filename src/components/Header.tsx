@@ -20,9 +20,13 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           <div className="hidden md:flex items-center space-x-2 text-sm text-muted-foreground">
             <Phone className="w-4 h-4" />
-            <span>+1 (555) 123-4567</span>
+            <span>0696382754</span>
           </div>
-          <Button variant="hero" size="sm">
+          <Button 
+            variant="hero" 
+            size="sm"
+            onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Book Now
           </Button>
           <Button variant="outline" size="sm" className="md:hidden">
